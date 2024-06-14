@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       colors: {
-        orange: "#FF6314",
-        gray: "#F4F4F4",
+        ornge: "#FF6314",
+        gry: "#F4F4F4",
         black: "#0D0E13",
       },
       fontFamily: {
