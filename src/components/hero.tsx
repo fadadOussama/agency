@@ -19,6 +19,7 @@ export default function Hero() {
 
       <div className="relative z-50">
         <div className="flex items-center justify-between">
+          {/* Logo */}
           <Image
             src={logo}
             alt="agyweb logo"
@@ -26,6 +27,7 @@ export default function Hero() {
             className={"size-10"}
           />
 
+          {/* links */}
           <div className="flex items-center gap-x-7">
             {links.map((link, i) => (
               <a
@@ -37,8 +39,18 @@ export default function Hero() {
               </a>
             ))}
           </div>
+        </div>
 
-          
+        {/* Hero text */}
+        <div>
+          <p className="text-7xl font-bold leading-normal">
+            Transforming ideas into{" "}
+            <span className="hero_text bg-clip-text font-swearDisplay text-transparent">
+              Websites
+            </span>
+            <br />
+            that drive results, build trust
+          </p>
         </div>
       </div>
     </div>
