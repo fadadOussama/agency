@@ -1,16 +1,12 @@
-import GridPattern from "@/components/magicui/grid-pattern";
-import { cn } from "@/lib/utils";
+import Hero from "@/components/hero";
 
 export default function page() {
   return (
-    <GridPattern
-      width={30}
-      height={30}
-      x={-1}
-      y={-1}
-      className={cn(
-        "[mask-image:radial-gradient(circle_at_center,white_55%,transparent)]",
-      )}
-    />
+    <div>
+      <Hero />
+      <div className="bg-green-500 h-screen ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos quis voluptatibus quasi repellat dolores recusandae eaque eum amet voluptate quo illo, et consequuntur officiis neque, libero dolor quod impedit.
+      </div>
+    </div>
   );
 }
