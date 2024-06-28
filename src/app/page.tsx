@@ -1,8 +1,12 @@
-export default function Home() {
+import Hero from "@/components/hero";
+
+export default function page() {
   return (
-    <div className=" text-9xl">
-      <p>Services</p>
-      <p className="font-bold">Services</p>
+    <div>
+      <Hero />
+      <div className="bg-green-500 h-screen ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos quis voluptatibus quasi repellat dolores recusandae eaque eum amet voluptate quo illo, et consequuntur officiis neque, libero dolor quod impedit.
+      </div>
     </div>
   );
 }
