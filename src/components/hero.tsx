@@ -41,7 +41,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero text  */}
         <div>
           <p className="text-7xl font-bold leading-normal">
             Transforming ideas into{" "}
