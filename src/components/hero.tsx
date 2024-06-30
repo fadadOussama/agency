@@ -6,7 +6,7 @@ import { links } from "@/constants/links";
 
 export default function Hero() {
   return (
-    <div className="container h-screen max-w-[1300px] pt-10">
+    <div className="container h-screen max-w-[1300px] pt-10 relative ">
       <GridPattern
         width={30}
         height={30}
@@ -17,9 +17,8 @@ export default function Hero() {
         )}
       />
 
-      <div className="relative z-50">
+      <div className="relative z-50 h-full">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Image
             src={logo}
             alt="agyweb logo"
@@ -27,7 +26,6 @@ export default function Hero() {
             className={"size-10"}
           />
 
-          {/* links */}
           <div className="flex items-center gap-x-7">
             {links.map((link, i) => (
               <a
@@ -41,9 +39,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero text */}
-        <div>
-          <p className="text-7xl font-bold leading-normal">
+        <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-full h-full mt-32 ">
+          <p className="text-[83px] font-bold leading-normal">
             Transforming ideas into{" "}
             <span className="hero_text bg-clip-text font-swearDisplay text-transparent">
               Websites
@@ -52,7 +49,10 @@ export default function Hero() {
             that drive results, build trust
           </p>
         </div>
+
+        
       </div>
+
     </div>
   );
 }
